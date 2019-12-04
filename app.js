@@ -32,11 +32,11 @@ function renderBikes(doc) {
 
 // retrieve data from db
 
-db.collection('bikes').get().then((snapshot) => {
-    snapshot.docs.forEach(doc => {
-        renderBikes(doc);
-    });
-});
+// db.collection('bikes').orderBy('brand').get().then((snapshot) => {
+//     snapshot.docs.forEach(doc => {
+//         renderBikes(doc);
+//     });
+// });
 
 
 // save data to db
@@ -53,4 +53,15 @@ form.addEventListener('submit', (e) => {
     form.cc.value = '';
 });
 
-
+// realtime retrieve data from db
+db.collection('bikes').orderBy('brand').onSnapshot(snapshot => {
+    let changes = snapshot.docChanges();
+    changes.forEach(change => {
+        if(change.type == 'added'){
+            renderBikes(change.doc);
+        } else if(change.type == 'removed'){
+            let li = bikeList.querySelector('[data-id=' + change.doc.id + ']');
+            bikeList.removeChild(li);
+        }
+    });
+})
