@@ -6,24 +6,26 @@ function renderBikes(doc) {
     let brand = document.createElement('span');
     let model = document.createElement('span');
     let cc = document.createElement('span');
-    let cross = document.createElement('div');
+    let icon = document.createElement('i');
 
+    icon.setAttribute('class', 'tiny material-icons')
     li.setAttribute('data-id', doc.id);
+    li.setAttribute('class', 'collection-item')
     brand.textContent = doc.data().brand;
     model.textContent = doc.data().model;
     cc.textContent = doc.data().cc;
-    cross.textContent = 'x';
+    icon.textContent = 'clear';
 
     li.appendChild(brand);
     li.appendChild(model);
     li.appendChild(cc);
-    li.appendChild(cross);
+    li.appendChild(icon);
 
     bikeList.appendChild(li);
 
     // delete data from db
 
-    cross.addEventListener('click', (e) => {
+    icon.addEventListener('click', (e) => {
         e.stopPropagation();
         let id = e.target.parentElement.getAttribute('data-id');
         db.collection('bikes').doc(id).delete();
