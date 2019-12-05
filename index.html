@@ -12,58 +12,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono|Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Logo</a>
+    
+        <div class="navbar-fixed">
+            <nav class="z-depth-5">
+                <div class="nav-wrapper">
+                    <a  class="brand-logo">BikeList</a>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <form id="add-bike-form" class="col s12">
+                    <input class="col s3 input-field" type="text" name="brand" placeholder="Bike Brand">
+                    <input class="col s3 input-field" type="text" name="model" placeholder="Model">
+                    <input class="col s3 input-field" type="number" name="cc" placeholder="CC">
+                    <button id="add-button" class="btn btn-primary col s1">Add bike</button>
+                </form>
+
+                <ul id="bike-list" class="collection with-header">
+                    <li class="collection-header"><h4>List of Bikes</h4></li>
+                </ul>
             </div>
-        </nav>
-    </div>
 
-    <div class="content container">
-
-        <div class="row">
-            <form id="add-bike-form" class="col s12">
-                <input class="col s3 input-field" type="text" name="brand" placeholder="Bike Brand">
-                <input class="col s3" type="text" name="model" placeholder="Model">
-                <input class="col s3" type="number" name="cc" placeholder="CC">
-                <button class="btn btn-primary col s1">Add bike</button>
-            </form>
-
-            <ul id="bike-list" class="collection with-header">
-                <li class="collection-header"><h4>List of Bikes</h4></li>
-            </ul>
         </div>
 
-    </div>
 
-
-
+    
     <footer class="page-footer">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    <h5>Firebase Database Project</h5>
+                    <p>Simple project using firebase tools and database.</p>
                 </div>
             <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5>Contact</h5>
                 <ul>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    <li><a  href="#!">Github</a></li>
+                    <li><a  href="#!">Portfolio</a></li>
                 </ul>
             </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div>
             <div class="container">
                 © 2019 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
         </div>
     </footer>

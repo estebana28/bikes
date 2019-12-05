@@ -2,8 +2,77 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    
 }
 
-main {
-    flex: 1 0 auto;
+a  {
+    text-decoration: none;
+    color: #000;
+}
+
+nav {
+    background-color: #fff;
+}
+
+nav .brand-logo {
+    background-color: #fff;
+    color: #172A3A;
+    margin-left: 3rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.navbar-fixed {
+    margin-bottom: 3rem;
+}
+
+.row .input-field.col.s3 {
+    margin-left: 2rem;
+}
+
+#add-button {
+    margin-left: 2rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.collection-header {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.collection-item {
+    -webkit-box-shadow: inset 1px 1px 15px 0px rgb(38,166,154,0.6);
+    -moz-box-shadow: inset 1px 1px 15px 0px rgb(38,166,154,0.6);
+    box-shadow: inset 1px 1px 15px 0px rgb(38,166,154, 0.6);
+}
+
+li {
+    font-family: 'Nova Mono', monospace;
+}
+
+li :nth-child(2) {
+    margin: 0 1rem;
+}
+
+.material-icons {
+    float: right;
+    margin-top: 0.3rem;
+    color: #26a69a;
+    font-weight: 900;
+}
+
+
+
+
+footer {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    color: #000;
+    box-shadow: 0 -24px 38px 3px rgba(0,0,0,0.14)
+}
+
+.page-footer {
+    background-color: #fff;
+    color: #000;
+
 }

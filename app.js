@@ -32,15 +32,6 @@ function renderBikes(doc) {
     })
 };
 
-// retrieve data from db
-
-// db.collection('bikes').orderBy('brand').get().then((snapshot) => {
-//     snapshot.docs.forEach(doc => {
-//         renderBikes(doc);
-//     });
-// });
-
-
 // save data to db
 
 form.addEventListener('submit', (e) => {
