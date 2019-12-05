@@ -13,7 +13,7 @@ function renderBikes(doc) {
     li.setAttribute('class', 'collection-item')
     brand.textContent = doc.data().brand;
     model.textContent = doc.data().model;
-    cc.textContent = doc.data().cc;
+    cc.textContent = doc.data().cc + "cc";
     icon.textContent = 'clear';
 
     li.appendChild(brand);
