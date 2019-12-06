@@ -22,20 +22,20 @@
                 <div class="nav-wrapper">
                     <a  class="brand-logo left">BikeList</a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li>Simple project using firebase tools and database</li>
+                        <li style="margin-right: 1rem;">Simple project using firebase tools and firestore</li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>   
     
-    <main>    
+    
         <div class="container main-content">
             <div class="row">
-                <form id="add-bike-form" class="col s12">
-                    <input class="col s10 offset-s1 m3 l3 input-field" type="text" name="brand" placeholder="Bike Brand">
-                    <input class="col s10 offset-s1 m3 l3 input-field" type="text" name="model" placeholder="Model">
-                    <input class="col s10 offset-s1 m3 l3 input-field" type="number" name="cc" placeholder="CC">
+                <form id="add-bike-form" class="col s12" autocomplete="off">
+                    <input class="col s10 offset-s1 m3 l3 input-field" type="text" name="brand" placeholder="Bike Brand" required>
+                    <input class="col s10 offset-s1 m3 l3 input-field" type="text" name="model" placeholder="Model" required>
+                    <input class="col s10 offset-s1 m3 l3 input-field" type="number" name="cc" placeholder="CC" required>
                     <button id="add-button" class="btn btn-primary col s6 offset-s3 m2 l2">Add bike</button>
                 </form>
 
@@ -44,7 +44,6 @@
                 </ul>
             </div>
         </div>
-    </main>
     
     <footer class="page-footer">
         <div class="container">

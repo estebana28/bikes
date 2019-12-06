@@ -1,6 +1,6 @@
 body {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #fff;
     flex-direction: column;
 }
@@ -56,9 +56,10 @@ form {
 }
 
 button {
-    background-color: #468189 !important;
+    background-color: #8948B5 !important;
     color: #fff !important;
     margin-top: 0.5rem;
+    
 }
 
 ul {
@@ -78,7 +79,7 @@ li :nth-child(2) {
 
 .material-icons {
     float: right;
-    margin-top: 0.3rem;
+    margin-top: -0.2rem;
     color: #fff;
     font-weight: 900;
 }
@@ -90,6 +91,7 @@ footer {
     bottom: 0;
     color: #fff;
     position: static;
+    flex-shrink: 0;
 }
 
 .page-footer {
@@ -102,6 +104,9 @@ footer {
     margin-bottom: 3vh;
 }
 
+
+/* Media queries */
+
 @media (max-width: 600px) {
     form {
         margin-top: 0rem;
@@ -113,3 +118,4 @@ footer {
         position: relative;
     }
 }
+

@@ -8,7 +8,7 @@ function renderBikes(doc) {
     let cc = document.createElement('span');
     let icon = document.createElement('i');
 
-    icon.setAttribute('class', 'tiny material-icons')
+    icon.setAttribute('class', 'small material-icons')
     li.setAttribute('data-id', doc.id);
     li.setAttribute('class', 'collection-item')
     brand.textContent = doc.data().brand;
