@@ -18,7 +18,12 @@ nav .brand-logo {
     background-color: #8A86A5;
     color: #fff;
     margin-left: 3rem;
+    margin-top: -0.2rem;
     font-family: 'Permanent Marker', cursive;
+}
+
+nav ul {
+    margin-left: 15rem;
 }
 
 .navbar-fixed {
