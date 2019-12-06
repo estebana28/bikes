@@ -16,18 +16,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper">
-                    <a  class="brand-logo">BikeList</a>
-                    <ul id="nav-mobile" class="right">
+                    <a  class="brand-logo left">BikeList</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li>Simple project using firebase tools and database</li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <div class="container">
+    </header>   
+    
+    <main>    
+        <div class="container main-content">
             <div class="row">
                 <form id="add-bike-form" class="col s12">
                     <input class="col s10 offset-s1 m3 l3 input-field" type="text" name="brand" placeholder="Bike Brand">
@@ -40,10 +43,8 @@
                     <li class="collection-header"><h4>List of Bikes</h4></li>
                 </ul>
             </div>
-
         </div>
-
-
+    </main>
     
     <footer class="page-footer">
         <div class="container">
