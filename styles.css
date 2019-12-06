@@ -3,7 +3,6 @@ body {
     min-height: 100vh;
     background-color: #fff;
     flex-direction: column;
-    overflow: scroll;
 }
 
 a  {
@@ -57,7 +56,7 @@ form {
 }
 
 button {
-    background-color: #8A86A5 !important;
+    background-color: #468189 !important;
     color: #fff !important;
     margin-top: 0.5rem;
 }
@@ -90,7 +89,7 @@ footer {
     left: 0;
     bottom: 0;
     color: #fff;
-    position: relative;
+    position: static;
 }
 
 .page-footer {
@@ -111,6 +110,6 @@ footer {
         margin-bottom: 2rem;
     }
     footer {
-
+        position: relative;
     }
 }
